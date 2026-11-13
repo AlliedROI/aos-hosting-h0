@@ -7,5 +7,5 @@ http.createServer((req, res) => {
     return res.end("ok");
   }
   res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
-  res.end("<!doctype html><title>Allied AOS hosting test</title><h1>Published by Allied AOS</h1><p>H0 test site.</p><p>Deployed on merge (H4b), published by the App.</p>");
+  res.end("<!doctype html><title>Allied AOS hosting test</title><h1>Published by Allied AOS</h1><p>H0 test site.</p><p>Deployed on merge (H4b), from a push event.</p>");
 }).listen(port, () => console.log(`listening on ${port}`));
